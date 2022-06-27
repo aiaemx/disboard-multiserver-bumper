@@ -120,6 +120,7 @@ while True:
 	channelID = [channel1, channel2, channel3, channel4]
 	t1 = Thread(target=task, args=(guildID[thingy], channelID[thingy]))
 	t1.start()
+	t1.join()
 	time.sleep(1925)
 	if guildID and channelID == None:
 		guildID = [server1, server2, server3, server4]
