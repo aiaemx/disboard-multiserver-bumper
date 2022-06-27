@@ -105,7 +105,7 @@ def task(guildID, channelID):
 			data = s.get(['bump'])
 			bot.triggerSlashCommand(botID, channelID=channelID, guildID=guildID, data=data, sessionID=bot.gateway.session_id)
 			print("Successfully bumped")
-            bot.gateway.close()
+            	bot.gateway.close()
 	bot.gateway.command(
 	    {
 		    "function": bump,
